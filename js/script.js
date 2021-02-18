@@ -18,7 +18,7 @@ async function getCharacters() {
 
         for (let i = 0; i < characterDetails.length; i++) {
 
-            newHtmlContainer.innerHTML += `<a href="details.html?id=${characterDetails.id}" class="characterDetails">
+            newHtmlContainer.innerHTML += `<a href="details.html?id=${characterDetails[i].id}" class="characterDetails">
                                             <h2>${characterDetails[i].name}</h2>
                                             <p>Species: ${characterDetails[i].species}</p>
                                             <p>Origin: ${characterDetails[i].origin.name}</p>
