@@ -34,12 +34,16 @@ function createHtml(details) {
     title.innerHTML = `${details.name}'s page`;
 
     detailsContainer.innerHTML = `<h1>${details.name}</h1>
-                                    <p>Status: ${details.status}</p>
-                                    <p>Gender: ${details.gender}</p>
-                                    <p>Origin: ${details.origin.name}</p>
-                                    <p>Species: ${details.species}</p>
-                                    <div class="img-container">
-                                        <img class="deatils-image" src="${details.image}"></img>
+                                    <div class="flex-container">
+                                        <div class="character-info-container">
+                                            <p>Status: ${details.status}</p>
+                                            <p>Gender: ${details.gender}</p>
+                                            <p>Origin: ${details.origin.name}</p>
+                                            <p>Species: ${details.species}</p>
+                                        </div>
+                                        <div class="img-container">
+                                            <img class="details-image" src="${details.image}"></img>
+                                        </div>
                                     </div>`;
 
 }

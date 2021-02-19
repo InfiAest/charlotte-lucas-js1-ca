@@ -18,10 +18,17 @@ async function getCharacters() {
 
         for (let i = 0; i < characterDetails.length; i++) {
 
+            if(characterDetails[i].id >= 19) {
+                continue;
+            }
+
             newHtmlContainer.innerHTML += `<a href="details.html?id=${characterDetails[i].id}" class="characterDetails">
                                             <h2>${characterDetails[i].name}</h2>
                                             <p>Species: ${characterDetails[i].species}</p>
                                             <p>Origin: ${characterDetails[i].origin.name}</p>
+                                            <div class="img-container">
+                                                <img class="thumbnail-image" src="${characterDetails[i].image}"></img>
+                                            </div>
                                             </a>`;
         }
     } 
