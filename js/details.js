@@ -16,8 +16,6 @@ async function getCharacterDetails() {
         const response = await fetch(url);
         const details = await response.json();
 
-        console.log(details);
-
         createHtml(details);
     }
     catch (error) {
