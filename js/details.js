@@ -22,7 +22,7 @@ async function getCharacterDetails() {
     }
     catch (error) {
         console.log(error);
-        newHtmlContainer.innerHTML = displayError("An error occured!");
+        detailsContainer.innerHTML = displayError("An error occured! See the console for more info");
     }
 
 }

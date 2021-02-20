@@ -1,5 +1,5 @@
 const form = document.querySelector("#contactForm");
-const name = document.querySelector("#name");
+const fullName = document.querySelector("#name");
 const nameError = document.querySelector("#nameError");
 const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subjectError");
@@ -14,7 +14,7 @@ function validateForm(event) {
 
     var formIsValid = true;
 
-    if (checkLength(name.value, 0) === true) {
+    if (checkLength(fullName.value, 0) === true) {
         nameError.style.display = "none";
     } else {
         nameError.style.display = "block";

@@ -34,7 +34,7 @@ async function getCharacters() {
     } 
     catch (error) {
         console.log(error);
-        newHtmlContainer.innerHTML = displayError("An error occured!");
+        newHtmlContainer.innerHTML = displayError("An error occured! See console for error");
     }
 
 }
